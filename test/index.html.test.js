@@ -21,6 +21,8 @@ describe("index.html", () => {
       const titleBox = document.querySelector("#title-box");
 
       const h2 = titleBox.querySelector("h2");
+      console.log("usa'", h2.innerHTML);
+
       const hint1 = "No <h2> tag(s) found";
       expect(h2, hint1).to.exist;
 
@@ -33,6 +35,7 @@ describe("index.html", () => {
       const titleBox = document.querySelector("#title-box");
 
       const h4 = titleBox.querySelectorAll("h4")[1];
+      console.log("usa'", h4.innerHTML);
       const hint1 = "No second <h4> tag found";
       expect(h4, hint1).to.exist;
 
